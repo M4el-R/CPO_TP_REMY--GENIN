@@ -4,6 +4,7 @@
  */
 package tp3_heroic_fantasy_remy;
 
+import Armes.*;
 import java.util.ArrayList;
 
 /**
@@ -28,7 +29,7 @@ public class TP3_Heroic_Fantasy_REMY {
         stuff.add(Chene);
         stuff.add(Charme);
         for (int i = 0; i <= stuff.size() - 1; i++) {
-            System.out.print("L'arme " + stuff.get(i).nom + " a " + stuff.get(i).GetAttaque() + " d'attaque et ");
+            System.out.print("L'arme " + stuff.get(i).GetNom() + " a " + stuff.get(i).GetAttaque() + " d'attaque et ");
             
             if (stuff.get(i) instanceof Baton){
             System.out.println(((Baton) stuff.get(i)).getAge()+ " d'age.");
